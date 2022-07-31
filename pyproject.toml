@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "airscan-paperless"
+version = "0.1.0"
+description = ""
+authors = ["Viktor Kleen <viktor@kleen.org>"]
+
+[tool.poetry.scripts]
+"airscan-paperless" = 'airscan_paperless.__main__:app'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+urllib3 = "^1.26.11"
+xmltodict = "^0.13.0"
+pyzbar = { git = "https://github.com/NaturalHistoryMuseum/pyzbar" }
+pdf2image = "^1.16.0"
+pikepdf = "^5.4.2"
+pynentry = "^0.1.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
